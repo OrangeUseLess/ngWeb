@@ -1,0 +1,49 @@
+.page_Index {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+
+  .page_Video {
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1);
+  }
+
+  .page_Slogan {
+    width: 32%;
+    height: 17%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: 131px;
+    min-width: 500px;
+
+    .slogan_Logo {
+      width: 420px;
+      height: 88px;
+      background-image: url('https://i.alipayobjects.com/i/ecmng/png/201501/4JdkvPYoOr.png');
+      background-repeat: no-repeat;
+      background-position: -10px 0;
+      background-size: 100% 100%;
+    }
+
+    .slogan_Btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      button {
+        width: 35%;
+      }
+    }
+  }
+}

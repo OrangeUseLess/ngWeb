@@ -1,0 +1,12 @@
+<div [class]="'page_Index'">
+    <video [class]="'page_Video'" muted loop autoplay>
+        <source [src]="videoUrl" type="video/mp4">
+    </video>
+    <div [class]="'page_Slogan'">
+        <div [class]="'slogan_Logo'"></div>
+        <div [class]="'slogan_Btn'">
+            <button mat-raised-button>立即注册</button>
+            <button (click)="toRegister()" mat-raised-button color="primary">账号登录</button>
+        </div>
+    </div>
+</div>

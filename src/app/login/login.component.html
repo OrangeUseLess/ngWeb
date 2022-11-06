@@ -1,0 +1,36 @@
+<div [class]="'myapp_Login'">
+    <div [class]="'login_Card'">
+        <div [class]="'card_Title'">登 录</div>
+        <div [class]="'card_Form'">
+            <form [formGroup]="loginFormControl" (submit)="onSubmit()" class="example-form">
+                <mat-form-field appearance="fill">
+                    <mat-label>用户名</mat-label>
+                    <mat-icon matSuffix>person_outline</mat-icon>
+                    <input formControlName="userName" required placeholder="请输入用户名" [errorStateMatcher]="matcher"
+                        required matInput>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>密码</mat-label>
+                    <mat-icon matSuffix>lock_open</mat-icon>
+                    <input type="password" formControlName="passWord" placeholder="请输入密码" required minlength="9"
+                        [errorStateMatcher]="matcher" matInput>
+                    <mat-error *ngIf="!loginFormControl.hasError('minlength')">
+                        密码不得少于<strong>9</strong>位
+                    </mat-error>
+                </mat-form-field>
+                <p>忘记密码?</p>
+                <button type="submit" [disabled]="loginFormControl.invalid" [class]="'form_Button'" mat-raised-button
+                    color="primary">登录</button>
+            </form>
+        </div>
+        <div [class]="'card_Options'">
+            <div [class]="'option_Title'">第三方登录</div>
+            <div [class]="'option_Items'">
+                <mat-icon [class]="'option_Icon'" matSuffix>money</mat-icon>
+                <mat-icon [class]="'option_Icon'" matSuffix>5g</mat-icon>
+                <mat-icon [class]="'option_Icon'" matSuffix>exposure_plus_2</mat-icon>
+            </div>
+            <div [class]="'register'">立即注册</div>
+        </div>
+    </div>
+</div>

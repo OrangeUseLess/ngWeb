@@ -1,0 +1,97 @@
+.myapp_Login {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left bottom, #bc06f3, #38a1df);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // card
+  .login_Card {
+    width: 22%;
+    height: 65%;
+    background: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    box-shadow: 0px 7px 22px 2px rgba(1, 10, 228, 0.06);
+    min-width: 300px;
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+
+    // title
+    .card_Title {
+      width: 100%;
+      height: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    // form
+    .card_Form {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .example-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+      }
+
+      p {
+        margin-left: 47%;
+        font-size: 10px;
+        cursor: pointer;
+      }
+
+      p:hover {
+        color: #38a1df;
+        border-bottom: .5px #38a1df solid;
+      }
+
+      .form_Button {
+        width: 50%;
+      }
+    }
+
+    // options
+    .card_Options {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      font-size: 10px;
+      min-height: 100px;
+      flex: 1;
+      justify-content: space-evenly;
+
+      .option_Items {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .option_Icon:hover {
+        background: #cfdce4;
+        cursor: pointer;
+      }
+
+      .register:hover {
+        color: #38a1df;
+        cursor: pointer;
+      }
+    }
+  }
+}
