@@ -25,6 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
 // http
 import { HttpClientModule } from '@angular/common/http';
 import { SnackBarComponent } from './home-page/components/snack-bar/snack-bar.component';
+import { ThreeDemoComponent } from './three-demo/three-demo.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { SnackBarComponent } from './home-page/components/snack-bar/snack-bar.co
     HomePageComponent,
     DialogComponent,
     SnackBarComponent,
+    ThreeDemoComponent,
   ],
   imports: [
     BrowserModule,
